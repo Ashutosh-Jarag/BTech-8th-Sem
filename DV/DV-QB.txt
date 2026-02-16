@@ -1,0 +1,85 @@
+Data Visualisation 
+
+1.Why data display requires planning? 
+
+2.Draw a diagram and explain with example seven stages of data visualisation 
+
+3.Discuss principles of data visualisation 
+
+4.Why is cleaning and filtering of data is important before visualisation?
+
+5.How do you create basic time series plot , what key functions are involved? 
+
+6.Write a short note on interpolation between dataset 
+
+7.What techniques can enhance interaction in data visualisation?
+
+8.What processing steps are necessary for analysing connection and correlation ? 
+
+9.Explain sorting using salary as tie breaker
+
+10.what is sketching in processing. write and explain hello world program in procesing.
+
+11. write a note on processing dot org project.
+
+12.Explain progress dimming and brighting points
+
+13. How do you deal with byte arrays when Processing with image data ? 
+
+14.How can you improve the display of folder contains in a tree map.
+
+15.Describe dealing with a large number of files in details.
+
+16. What an the key principles to consider when data visualising
+
+17. what are the step to Create basic sketch in processing.
+
+18 why is cleanning and filtering data impatant before visualization.
+
+19. how do you create basic time series plot .what key functions are involved?
+
+20. Describe inter polation between datasets.
+
+21. What method Can you use to acquire time series data on milk, tea, coffee.
+
+22. What challenges might arise When loading geographical data for scatter plot maps.
+
+23.How can zooming improve the analysis of scatter plot data?
+
+24.What are tree maps and how can they be utilised to visualise Hierarchical data?
+
+25.what tools are available for acquiring the data from the internet?
+
+26.which steps are necessary for loading, and managing text data in processing?
+
+27.How can effectively represent zip code in a scatter plot.
+
+28.Explain using open Stream () as a briedge to java.
+
+29.How do you deal with byte arrays when processing image data ?
+
+30. What a principle should be consider during, the interaction and combination stages of visualising data to ensure clarity and effectiveness? 
+
+31.Explain seven Stages of data visualisation .
+
+32.Write a Short on note Sketching and scripting.
+
+33.Explain in detail method of interpolation 
+
+34. write a note on simple plot  labelling the current datasets.
+
+35.How do you create basic time series plot. What key function are involved.
+
+36. Explain acquiring, parsing and filtering data in details.
+
+37.Explain deployment issue acquire and refine in details.
+
+38.How Can zooming improve the analysis of Scatter plot data
+
+39.write a short note on tree maps
+
+40.How can you effectively represent zip code in Scatter plot?
+
+41. How do you deal with byte arrays when processing with image data?
+
+42.what strategies can be employment for managing and visualizing a large number of file?

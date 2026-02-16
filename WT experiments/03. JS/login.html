@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" onsubmit="return validateLogin()">
+        <h2>Login</h2>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <span id="usernameError" class="error">Username cannot be empty</span>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <span id="passwordError" class="error">Password must be at least 6 characters</span>
+
+        <input type="submit" value="Login">
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </form>
+
+    <script>
+        function validateLogin() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let usernameError = document.getElementById("usernameError");
+            let passwordError = document.getElementById("passwordError");
+            let isValid = true;
+
+            // Reset error messages
+            usernameError.style.display = "none";
+            passwordError.style.display = "none";
+
+            // Username validation
+            if (username.trim() === "") {
+                usernameError.style.display = "block";
+                isValid = false;
+            }
+
+            // Password validation
+            if (password.length < 6) {
+                passwordError.style.display = "block";
+                isValid = false;
+            }
+
+            return isValid; // Form submits only if all validations pass
+        }
+    </script>
+</body>
+</html>

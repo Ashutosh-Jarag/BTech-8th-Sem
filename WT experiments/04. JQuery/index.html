@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Read/Write HTML Content</title>
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h2 {
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #displayArea {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 50px;
+        }
+        #itemList {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        #itemList li {
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>jQuery Read/Write Demo</h2>
+        
+        <!-- Input to write content -->
+        <input type="text" id="userInput" placeholder="Enter some text">
+        
+        <!-- Buttons to trigger actions -->
+        <button id="readButton">Read Input</button>
+        <button id="writeButton">Write to Display</button>
+        <button id="addToList">Add to List</button>
+        
+        <!-- Area to display content -->
+        <div id="displayArea">Content will appear here.</div>
+        
+        <!-- List to append items -->
+        <ul id="itemList">
+            <li>List of Words :- </li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Read content from input and display it in an alert
+            $("#readButton").click(function() {
+                let inputValue = $("#userInput").val(); // Read input value
+                if (inputValue.trim() === "") {
+                    alert("Please enter some text first!");
+                } else {
+                    alert("You entered: " + inputValue);
+                }
+            });
+
+            // Write content from input to display area
+            $("#writeButton").click(function() {
+                let inputValue = $("#userInput").val(); // Read input value
+                if (inputValue.trim() === "") {
+                    $("#displayArea").html("Error: Input is empty!");
+                } else {
+                    $("#displayArea").html("You wrote: " + inputValue); // Write to display area
+                }
+            });
+
+            // Add input content to the list
+            $("#addToList").click(function() {
+                let inputValue = $("#userInput").val(); // Read input value
+                if (inputValue.trim() === "") {
+                    $("#displayArea").html("Error: Cannot add empty item!");
+                } else {
+                    $("#itemList").append("<li>" + inputValue + "</li>"); // Append to list
+                    $("#userInput").val(""); // Clear input field
+                    $("#displayArea").html("Item added to list!");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

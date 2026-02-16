@@ -1,0 +1,13 @@
+
+--- How to Run php program in Vscode without xampp server
+
+
+
+1. save file .php extesnion 
+2. using vs code run following cmd in terminal
+
+    php -S localhost:8000
+
+3. For the run the program visit following address on web
+
+    http://localhost:8000/filename.php      // repalce filename with your file name

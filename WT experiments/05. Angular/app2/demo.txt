@@ -1,0 +1,12 @@
+angular-todo-app/
+├── src/
+│   ├── app/
+│   │   ├── app.component.html    // Template
+│   │   ├── app.component.ts      // Logic
+│   │   ├── app.component.css     // Styles
+│   │   ├── app.module.ts         // Module configuration
+│   │   └── app-routing.module.ts // Routing (not used here)
+│   ├── index.html                // Main HTML file
+│   └── styles.css                // Global styles (optional)
+├── package.json                  // Dependencies and scripts
+└── angular.json                  // Angular configuration
